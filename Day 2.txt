@@ -1,0 +1,32 @@
+Que 1. Find the value of the following questions, Where x=5
+● (2x+5/x^2+5x+6)
+● (x^2+5x+6/2x+5)
+● (2x-3)(x-9)
+--------------------------------
+x=5
+print((2*x+5)/(x**2+5*x+6))
+print((x**2+5*x+6)/(2*x+5))
+print((2*x-3)*(x-9))
+--------------------------------
+Que 2. Create a username and password login file using nested while loop.
+--------------------------------
+Username="India"
+Password="Ind"
+a=1
+Username=str(input("Enter Username: "))
+while Username!="India":
+    print("Wrong Username !!")
+    Username=str(input("Enter Username: "))
+else:
+    Password=str(input("Enter Password: "))
+    while a<=5:
+        if Password=="Ind":
+            print("Login Successfully...")
+            break
+        else:
+            if(a<5):
+                print(5-a," attempt left..Enter again: ")
+                Password=str(input("Enter Password: "))
+            else:
+                print("Your Account is Blocked for 24 Hrs. !!!")
+        a=a+1    
